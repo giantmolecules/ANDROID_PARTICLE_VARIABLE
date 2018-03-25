@@ -25,7 +25,7 @@ void draw() {
   fill(0);
   currentTime = millis();
   if (currentTime - pastTime > interval) {
-    json = loadJSONObject("https://api.particle.io/v1/devices/3a0022000d51353532343635/bpm?access_token=73324860de578a16cbb22bb4810a326d5e0610b4");
+    json = loadJSONObject("https://api.particle.io/v1/devices/DEVICEID/bpm?access_token=ACCESSTOKEN");
       if (json == null) {
         println("JSONArray could not be parsed");
       } else {
